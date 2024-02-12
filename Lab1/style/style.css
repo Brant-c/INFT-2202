@@ -114,4 +114,41 @@ a, a:hover {
     padding: 0;
 }
 
+/* Styling for other pages*/
+.content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.media-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Ensures text overflow is hidden */
+    height: auto; /* Set height to auto to allow it to expand */
+}
+
+.media-img, .service-img, .avatar-img {
+    width: 100%; /* Adjust based on your layout */
+    max-width: 300px; /* Adjust based on your needs */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Centers image and adds spacing below */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #007bff; /* Bootstrap link color for consistency */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0056b3;
+}
 
