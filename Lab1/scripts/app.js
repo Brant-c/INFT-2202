@@ -39,25 +39,25 @@ document.addEventListener('DOMContentLoaded', () => {
   handleContactFormSubmission();
 });
 
+// Inject text for Services
 function injectServicesContent() {
   const servicesContent = document.getElementById('services-content');
   if (servicesContent) {
-      // Example services data
       const services = [
           {
               title: "Custom Programming",
               description: "I offer great programming solutions tailored to your business needs.",
-              resumeLink: "path/to/programming-resume.pdf"
+              resumeLink: "media/BCResume.pdf"
           },
           {
               title: "Web Design",
               description: "Creating intuitive and beautiful web designs that drive user engagement is on of my hobbies.",
-              resumeLink: "path/to/design-resume.pdf"
+              resumeLink: "media/BCResume.pdf"
           },
           {
               title: "Adaptable",
               description: "I find myself to be very adaptable and a fast learner which can be very helpful in the infancy of my career.",
-              resumeLink: "path/to/mobile-dev-resume.pdf"
+              resumeLink: "media/BCResume.pdf"
           }
       ];
 
@@ -73,6 +73,7 @@ function injectServicesContent() {
   }
 }
 
+// Inject Text for Interests
 function injectInterestsContent() {
   const interests = [
       {
@@ -99,14 +100,9 @@ function injectInterestsContent() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Update avatar image source
-  const avatarImg = document.getElementById('avatar-img');
-  if (avatarImg) {
-      avatarImg.src = "images/avatar.jpg";
-  }
 
-  // Inject text for About Me
+// Inject text for About Me
+document.addEventListener('DOMContentLoaded', () => {
   const aboutTextContainer = document.getElementById('about-text');
   if (aboutTextContainer) {
       const aboutText = `
@@ -117,6 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Add Human resources tab to navbar
 function addHumanResourcesLink() {
   const aboutUsLink = document.querySelector('.nav-link[href="about.html"]');
   if (aboutUsLink) {
@@ -127,6 +124,7 @@ function addHumanResourcesLink() {
   }
 }
 
+//Bottom navbar with copyright
 function addFixedBottomNavbar() {
   const fixedBottomNavbar = `
   <nav class="navbar fixed-bottom navbar-light bg-light">
@@ -140,6 +138,7 @@ function addFixedBottomNavbar() {
   document.body.insertAdjacentHTML('beforeend', fixedBottomNavbar);
 }
 
+// Function to submit/log user input from contact page
 function handleContactFormSubmission() {
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
