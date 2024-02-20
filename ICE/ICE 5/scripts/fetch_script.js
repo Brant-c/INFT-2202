@@ -25,7 +25,6 @@ goFetch(url_albums).then(data => console.log(data));
 goFetch(url_todos).then(data => console.log(data));
 goFetch(url_users).then(data => console.log(data));
 
-// Simplified version to populate images without using figcaption
 goFetch(url_photos).then(photos => {
     if (photos && photos.length > 0) {
         // Select two random photos from the fetched data
