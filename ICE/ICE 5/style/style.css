@@ -1,0 +1,31 @@
+body {
+    background-color: #2b2d42;
+    color: #f8edeb;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Sigmar One', cursive;
+    font-size: 60px;
+}
+
+#images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #3d405b;
+    border-radius: 12px;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+img {
+    margin: 20px;
+    max-height: 300px;
+}
+
