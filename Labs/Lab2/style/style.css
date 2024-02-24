@@ -1,0 +1,154 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #004d99; /* Dark blue */
+    border-bottom: 3px solid #003366; /* Darker blue */
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important; /* Ensures text is always white */
+}
+
+.nav-link {
+    background-color: #004d99; /* Keeps the background color consistent */
+}
+
+.nav-link:hover {
+    background-color: #003366; /* Darker blue for hover effect */
+}
+
+/* Active link styling */
+.nav-item.active .nav-link, .nav-item.active .nav-link:hover {
+    background-color: #00264d; /* Even darker blue for active state */
+    color: #ffffff !important;
+}
+
+/* Footer or fixed-bottom navbar */
+.fixed-bottom {
+    background-color: #004d99; /* Dark blue */
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Other custom styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #003366; /* Dark blue */
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap default blue for consistency*/
+}
+
+/* Utility classes */
+.text-dark-blue {
+    color: #004d99; /* Dark blue */
+}
+
+.bg-dark-blue {
+    background-color: #004d99; /* Dark blue */
+}
+
+/* Custom button styles */
+.btn-custom-blue {
+    background-color: #004d99; /* Dark blue */
+    color: #ffffff;
+}
+
+.btn-custom-blue:hover {
+    background-color: #003366; /* Darker blue */
+    color: #ffffff;
+}
+
+/* Home Page Styling */
+.home-background {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    color: #ffffff;
+    padding-top: 50px; 
+}
+
+.logo {
+    width: 600px; /* Logo width */
+    height: 250px; /* Logo height */
+    object-fit: cover;
+    margin-bottom: 20px; /* Spacing below the logo */
+}
+
+.text-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; /* Center text inside the container */
+    max-width: 80%; 
+}
+
+/* Centering the text container specifically */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensures the container takes the full width for centering */
+}
+
+.container.text-white.py-5 {
+    background: none;
+    padding: 0;
+}
+
+/* Styling for other pages*/
+.content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.media-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Ensures text overflow is hidden */
+    height: auto; /* Set height to auto to allow it to expand */
+}
+
+.media-img, .service-img, .avatar-img {
+    width: 100%; /* Adjust based on your layout */
+    max-width: 300px; /* Adjust based on your needs */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Centers image and adds spacing below */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #007bff; /* Bootstrap link color for consistency */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
