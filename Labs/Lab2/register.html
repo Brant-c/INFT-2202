@@ -1,0 +1,58 @@
+<!-- 
+    File: register.html
+    Date Created: Feb 23
+    Author: Brantly Cooper
+    
+    Description: This HTML file serves as the registration page where new users can create an account. It includes input fields for personal information such as name, email, password, and a submit button to complete the registration process.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- Bootstrap CSS from node_modules -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome CSS from node_modules -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Register</h2>
+    <div id="ErrorMessage" class="alert alert-danger" style="display: none;"></div>
+    <form id="registerForm">
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="form-control" id="firstName" required minlength="2">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" id="lastName" required minlength="2">
+        </div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" required minlength="6">
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" class="form-control" id="confirmPassword" required minlength="6">
+        </div>
+        <button type="submit" class="btn btn-primary" id="registerButton">Register</button>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="scripts/app.js"></script>
+</body>
+</html>

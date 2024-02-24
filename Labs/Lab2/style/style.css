@@ -88,7 +88,7 @@ a, a:hover {
 
 .logo {
     width: 600px; /* Logo width */
-    height: 250px; /* Logo height */
+    height: 300px; /* Logo height */
     object-fit: cover;
     margin-bottom: 20px; /* Spacing below the logo */
 }
